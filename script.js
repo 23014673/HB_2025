@@ -13,6 +13,26 @@ const sliderInit = function (currentSlider) {
 
   let currentSlidePos = 0;
 
+  /*** NAV BAR TAB SWITCHING ***/
+const navItems = document.querySelectorAll(".nav-item");
+const tabContents = document.querySelectorAll(".tab-content");
+
+navItems.forEach(item => {
+  item.addEventListener("click", () => {
+    // Remove active classes
+    navItems.forEach(i => i.classList.remove("active"));
+    tabContents.forEach(c => c.classList.remove("active"));
+
+    // Activate selected
+    item.classList.add("active");
+    const target = document.getElementById(item.getAttribute("data-tab"));
+    if (target) target.classList.add("active");
+  });
+});
+
+// Default: show first tab
+document.querySelector(".tab-content").classList.add("active");
+
   /**
    * NEXT SLIDE
    */
@@ -75,3 +95,19 @@ const sliderInit = function (currentSlider) {
 for (let i = 0, len = sliders.length; i < len; i++) {
   sliderInit(sliders[i]);
 }
+
+  // Scale the body and all sliders by 1.3 (30% bigger)
+  document.addEventListener("DOMContentLoaded", () => {
+    const scaleFactor = 1.5;
+
+    // Scale the container
+    const container = document.querySelector('.container');
+    if (container) {
+      container.style.transform = `scale(${scaleFactor})`;
+      container.style.transformOrigin = 'top center'; // keeps it centered at top
+    }
+
+    // Optionally, scale the body as well if needed
+    // document.body.style.transform = `scale(${scaleFactor})`;
+    // document.body.style.transformOrigin = 'top center';
+  });

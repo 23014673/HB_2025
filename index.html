@@ -10,253 +10,105 @@
 </head>
 
 <body>
+  <!-- Modern Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li class="nav-item active" data-tab="jhope">J-Hope</li>
+      <!-- <li class="nav-item" data-tab="banner1">Banner 1</li> -->
+      <li class="nav-item" data-tab="jin">Jin</li>
+      <!-- <li class="nav-item" data-tab="banner1">Banner 2</li> -->
+      <li class="nav-item" data-tab="jk">Jungkook</li>
+    </ul>
+  </nav>
+
   <div class="container">
-
-    <!-- JHOPE Card Slider -->
-    <div class="slider card-slider" data-slider>
-      <div class="slider-container" data-slider-container>
-        <div class="slider-item">
-          <div class="card img-holder" style="--width: 500; --height: 750;">
-            <img src="./images/movie-01.jpg" width="500" height="750" alt="" class="img-cover">
-          </div>
+    <!-- J-Hope Slider Section -->
+    <div class="tab-content active" id="jhope">
+      <div class="slider card-slider" data-slider>
+        <div class="slider-container" data-slider-container>
+          <div class="slider-item"><div class="card img-holder" style="--width: 500; --height: 750;"><img src="./images/movie-01.jpg" alt="" class="img-cover"></div></div>
+          <div class="slider-item"><div class="card img-holder" style="--width: 500; --height: 750;"><img src="./images/movie-02.jpg" alt="" class="img-cover"></div></div>
+          <div class="slider-item"><div class="card img-holder" style="--width: 500; --height: 750;"><img src="./images/movie-03.jpg" alt="" class="img-cover"></div></div>
+          <div class="slider-item"><div class="card img-holder" style="--width: 500; --height: 750;"><img src="./images/movie-04.jpg" alt="" class="img-cover"></div></div>
+          <div class="slider-item"><div class="card img-holder" style="--width: 500; --height: 750;"><img src="./images/movie-05.jpg" alt="" class="img-cover"></div></div>
+          <div class="slider-item"><div class="card img-holder" style="--width: 500; --height: 750;"><img src="./images/movie-06.jpg" alt="" class="img-cover"></div></div>
         </div>
-        <div class="slider-item">
-          <div class="card img-holder" style="--width: 500; --height: 750;">
-            <img src="./images/movie-02.jpg" width="500" height="750" alt="" class="img-cover">
-          </div>
-        </div>
-        <div class="slider-item">
-          <div class="card img-holder" style="--width: 500; --height: 750;">
-            <img src="./images/movie-03.jpg" width="500" height="750" alt="" class="img-cover">
-          </div>
-        </div>
-        <div class="slider-item">
-          <div class="card img-holder" style="--width: 500; --height: 750;">
-            <img src="./images/movie-04.jpg" width="500" height="750" alt="" class="img-cover">
-          </div>
-        </div>
-        <div class="slider-item">
-          <div class="card img-holder" style="--width: 500; --height: 750;">
-            <img src="./images/movie-05.jpg" width="500" height="750" alt="" class="img-cover">
-          </div>
-        </div>
-        <div class="slider-item">
-          <div class="card img-holder" style="--width: 500; --height: 750;">
-            <img src="./images/movie-06.jpg" width="500" height="750" alt="" class="img-cover">
-          </div>
-        </div>
+        <button class="btn-icon slider-control prev" data-slider-prev><ion-icon name="arrow-back-sharp"></ion-icon></button>
+        <button class="btn-icon slider-control next" data-slider-next><ion-icon name="arrow-forward-sharp"></ion-icon></button>
       </div>
-
-      <button class="btn-icon slider-control prev" data-slider-prev>
-        <ion-icon name="arrow-back-sharp"></ion-icon>
-      </button>
-      <button class="btn-icon slider-control next" data-slider-next>
-        <ion-icon name="arrow-forward-sharp"></ion-icon>
-      </button>
     </div>
 
-    <!-- Banner Slider -->
-    <div class="slider banner-slider" data-slider>
-      <div class="slider-container" data-slider-container>
-        <div class="slider-item">
-          <div class="card img-holder" style="--width: 300; --height: 533;">
-            <!-- <video width="100%" height="100%" controls>
-              <source src="./images/video1.mp4" type="video/mp4">
-            </video> -->
-
-            <video width="100%" height="100%" controls>
-              <source src="https://www.dropbox.com/scl/fi/p5wni68srrw7owf63s2yo/video1.mp4?rlkey=5hpdzduibnarlbday03b4s29k&st=lsih7tvr&raw=1" type="video/mp4">
-            </video>
-
-          </div>
+    <!-- Banner 1 Section
+    <div class="tab-content" id="banner1">
+      <div class="slider banner-slider" data-slider>
+        <div class="slider-container" data-slider-container>
+          <div class="slider-item"><div class="card img-holder" style="--width: 300; --height: 533;"><video width="100%" height="100%" controls><source src="https://www.dropbox.com/scl/fi/p5wni68srrw7owf63s2yo/video1.mp4?rlkey=5hpdzduibnarlbday03b4s29k&st=lsih7tvr&raw=1" type="video/mp4"></video></div></div>
+          <div class="slider-item"><div class="card img-holder" style="--width: 300; --height: 533;"><video width="100%" height="100%" controls><source src="https://www.dropbox.com/scl/fi/q0zvrau84j3vhctpe75rs/video2.mp4?rlkey=t59rai1x0rtqwtxvvtdxwqfiq&st=nnbwito1&raw=1" type="video/mp4"></video></div></div>
+          <div class="slider-item"><div class="card img-holder" style="--width: 300; --height: 533;"><video width="100%" height="100%" controls><source src="https://www.dropbox.com/scl/fi/51fxdvlwiplmp983uer67/video3.mp4?rlkey=fufu9orxec0ayuv1fxbfmlfmj&st=lfdoc2ds&raw=1" type="video/mp4"></video></div></div>
+          <div class="slider-item"><div class="card img-holder" style="--width: 300; --height: 533;"><video width="100%" height="100%" controls><source src="https://www.dropbox.com/scl/fi/adoij7z7hb55e5g8fpou2/video4.mp4?rlkey=jz7c0dt1cevyugin8pp5vuuo1&st=6vrdvr1l&raw=1" type="video/mp4"></video></div></div>
         </div>
-        <div class="slider-item">
-          <div class="card img-holder" style="--width: 300; --height: 533;">
-          <video width="100%" height="100%" controls>
-            <source src="https://www.dropbox.com/scl/fi/q0zvrau84j3vhctpe75rs/video2.mp4?rlkey=t59rai1x0rtqwtxvvtdxwqfiq&st=nnbwito1&raw=1 " type="video/mp4">
-          </video>
-
-          </div>
-        </div>
-        <div class="slider-item">
-          <div class="card img-holder" style="--width: 300; --height: 533;">
-            <video width="100%" height="100%" controls>
-              <source src="https://www.dropbox.com/scl/fi/51fxdvlwiplmp983uer67/video3.mp4?rlkey=fufu9orxec0ayuv1fxbfmlfmj&st=lfdoc2ds&raw=1" type="video/mp4">
-            </video>
-          </div>
-        </div>
-                <div class="slider-item">
-          <div class="card img-holder" style="--width: 300; --height: 533;">
-            <video width="100%" height="100%" controls>
-              <source src="https://www.dropbox.com/scl/fi/adoij7z7hb55e5g8fpou2/video4.mp4?rlkey=jz7c0dt1cevyugin8pp5vuuo1&st=6vrdvr1l&raw=1" type="video/mp4">
-            </video>
-          </div>
-        </div>
+        <button class="btn-icon slider-control prev" data-slider-prev><ion-icon name="arrow-back-sharp"></ion-icon></button>
+        <button class="btn-icon slider-control next" data-slider-next><ion-icon name="arrow-forward-sharp"></ion-icon></button>
       </div>
+    </div>  -->
 
-      <button class="btn-icon slider-control prev" data-slider-prev>
-        <ion-icon name="arrow-back-sharp"></ion-icon>
-      </button>
-      <button class="btn-icon slider-control next" data-slider-next>
-        <ion-icon name="arrow-forward-sharp"></ion-icon>
-      </button>
+    <!-- Jin Slider Section -->
+    <div class="tab-content" id="jin">
+      <div class="slider card-slider" data-slider>
+        <div class="slider-container" data-slider-container>
+        <div class="slider-item"><div class="card img-holder" style="--width: 500; --height: 750;"><img src="./images/movie-07.jpg" alt="" class="img-cover"></div></div>
+        <div class="slider-item"><div class="card img-holder" style="--width: 500; --height: 750;"><img src="./images/movie-08.jpg" alt="" class="img-cover"></div></div>
+        <div class="slider-item"><div class="card img-holder" style="--width: 500; --height: 750;"><img src="./images/movie-09.jpg" alt="" class="img-cover"></div></div>
+        <div class="slider-item"><div class="card img-holder" style="--width: 500; --height: 750;"><img src="./images/movie-10.jpg" alt="" class="img-cover"></div></div>
+        <div class="slider-item"><div class="card img-holder" style="--width: 500; --height: 750;"><img src="./images/movie-11.jpg" alt="" class="img-cover"></div></div>
+        <div class="slider-item"><div class="card img-holder" style="--width: 500; --height: 750;"><img src="./images/movie-12.jpg" alt="" class="img-cover"></div></div>
+        <div class="slider-item"><div class="card img-holder" style="--width: 500; --height: 750;"><img src="./images/movie-13.jpg" alt="" class="img-cover"></div></div>
+        <div class="slider-item"><div class="card img-holder" style="--width: 500; --height: 750;"><img src="./images/movie-14.jpg" alt="" class="img-cover"></div></div>
+        </div>
+        <button class="btn-icon slider-control prev" data-slider-prev><ion-icon name="arrow-back-sharp"></ion-icon></button>
+        <button class="btn-icon slider-control next" data-slider-next><ion-icon name="arrow-forward-sharp"></ion-icon></button>
+      </div>
     </div>
 
-    <!-- JIN Card Slider -->
-    <div class="slider card-slider" data-slider>
-      <div class="slider-container" data-slider-container>
-        <div class="slider-item">
-          <div class="card img-holder" style="--width: 500; --height: 750;">
-            <img src="./images/movie-17.jpg" width="500" height="750" alt="" class="img-cover">
-          </div>
+    <!-- Banner 2 Section
+    <div class="tab-content" id="banner2">
+      <div class="slider banner-slider" data-slider>
+        <div class="slider-container" data-slider-container>
+          <div class="slider-item"><div class="card img-holder" style="--width: 200; --height: 700;"><video width="100%" height="100%" controls><source src="https://www.dropbox.com/scl/fi/jurvykwpqmsl8kb1r7xrp/video5.mp4?rlkey=95uvkprtre1tm4am8giqyer1z&st=cr4y8kqp&raw=1" type="video/mp4"></video></div></div>
+          <div class="slider-item"><div class="card img-holder" style="--width: 200; --height: 700;"><video width="100%" height="100%" controls><source src="https://www.dropbox.com/scl/fi/7446e058wcnuumwmy0w9q/video6.mp4?rlkey=9t941htbbi0cpcp2fao4bvz0k&st=a1tkogx2&raw=1" type="video/mp4"></video></div></div>
+          <div class="slider-item"><div class="card img-holder" style="--width: 200; --height: 700;"><video width="100%" height="100%" controls><source src="https://www.dropbox.com/scl/fi/23mkrj63wql2xr90t39s3/video7.mp4?rlkey=zotxzk6k1djtjjyeht645iefq&st=k9znz390&raw=1" type="video/mp4"></video></div></div>
+          <div class="slider-item"><div class="card img-holder" style="--width: 200; --height: 700;"><video width="100%" height="100%" controls><source src="https://www.dropbox.com/scl/fi/0hpnkmukamcookzyess6s/video8.mp4?rlkey=s43svbvhh5bubab27twytkm7z&st=x0tv1v6g&raw=1" type="video/mp4"></video></div></div>
         </div>
-        <div class="slider-item">
-          <div class="card img-holder" style="--width: 500; --height: 750;">
-            <img src="./images/movie-18.jpg" width="500" height="750" alt="" class="img-cover">
-          </div>
-        </div>
-        <div class="slider-item">
-          <div class="card img-holder" style="--width: 500; --height: 750;">
-            <img src="./images/movie-19.jpg" width="500" height="750" alt="" class="img-cover">
-          </div>
-        </div>
-        <div class="slider-item">
-          <div class="card img-holder" style="--width: 500; --height: 750;">
-            <img src="./images/movie-20.jpg" width="500" height="750" alt="" class="img-cover">
-          </div>
-        </div>
-        <div class="slider-item">
-          <div class="card img-holder" style="--width: 500; --height: 750;">
-            <img src="./images/movie-21.jpg" width="500" height="750" alt="" class="img-cover">
-          </div>
-        </div>
-        <div class="slider-item">
-          <div class="card img-holder" style="--width: 500; --height: 750;">
-            <img src="./images/movie-22.jpg" width="500" height="750" alt="" class="img-cover">
-          </div>
-        </div>
+        <button class="btn-icon slider-control prev" data-slider-prev><ion-icon name="arrow-back-sharp"></ion-icon></button>
+        <button class="btn-icon slider-control next" data-slider-next><ion-icon name="arrow-forward-sharp"></ion-icon></button>
       </div>
+    </div> -->
 
-      <button class="btn-icon slider-control prev" data-slider-prev>
-        <ion-icon name="arrow-back-sharp"></ion-icon>
-      </button>
-      <button class="btn-icon slider-control next" data-slider-next>
-        <ion-icon name="arrow-forward-sharp"></ion-icon>
-      </button>
-    </div>
-
-        <!-- Banner Slider -->
-    <div class="slider banner-slider" data-slider>
-      <div class="slider-container" data-slider-container>
-        <div class="slider-item">
-          <div class="card img-holder" style="--width: 300; --height: 533;">
-            <video width="100%" height="100%" controls>
-              <source src="https://www.dropbox.com/scl/fi/jurvykwpqmsl8kb1r7xrp/video5.mp4?rlkey=95uvkprtre1tm4am8giqyer1z&st=cr4y8kqp&raw=1" type="video/mp4">
-            </video>
-          </div>
+    <!-- Jungkook Slider Section -->
+    <div class="tab-content" id="jk">
+      <div class="slider card-slider" data-slider>
+        <div class="slider-container" data-slider-container>
+          <div class="slider-item"><div class="card img-holder" style="--width: 500; --height: 750;"><img src="./images/movie-07.jpg" width="500" height="750" alt="" class="img-cover"></div></div>
+          <div class="slider-item"><div class="card img-holder" style="--width: 500; --height: 750;"><img src="./images/movie-08.jpg" width="500" height="750" alt="" class="img-cover"></div></div>
+          <div class="slider-item"><div class="card img-holder" style="--width: 500; --height: 750;"><img src="./images/movie-09.jpg" width="500" height="750" alt="" class="img-cover"></div></div>
+          <div class="slider-item"><div class="card img-holder" style="--width: 500; --height: 750;"><img src="./images/movie-10.jpg" width="500" height="750" alt="" class="img-cover"></div></div>
+          <div class="slider-item"><div class="card img-holder" style="--width: 500; --height: 750;"><img src="./images/movie-11.jpg" width="500" height="750" alt="" class="img-cover"></div></div>
+          <div class="slider-item"><div class="card img-holder" style="--width: 500; --height: 750;"><img src="./images/movie-12.jpg" width="500" height="750" alt="" class="img-cover"></div></div>
+          <div class="slider-item"><div class="card img-holder" style="--width: 500; --height: 750;"><img src="./images/movie-13.jpg" width="500" height="750" alt="" class="img-cover"></div></div>
+          <div class="slider-item"><div class="card img-holder" style="--width: 500; --height: 750;"><img src="./images/movie-14.jpg" width="500" height="750" alt="" class="img-cover"></div></div>
+          <div class="slider-item"><div class="card img-holder" style="--width: 500; --height: 750;"><img src="./images/movie-15.jpg" width="500" height="750" alt="" class="img-cover"></div></div>
+          <div class="slider-item"><div class="card img-holder" style="--width: 500; --height: 750;"><img src="./images/movie-16.jpg" width="500" height="750" alt="" class="img-cover"></div></div>
         </div>
-        <div class="slider-item">
-          <div class="card img-holder" style="--width: 300; --height: 533;">
-            <video width="100%" height="100%" controls>
-              <source src="https://www.dropbox.com/scl/fi/7446e058wcnuumwmy0w9q/video6.mp4?rlkey=9t941htbbi0cpcp2fao4bvz0k&st=a1tkogx2&raw=1" type="video/mp4">
-            </video>
-          </div>
-        </div>
-        <div class="slider-item">
-          <div class="card img-holder" style="--width: 300; --height: 533;">
-            <video width="100%" height="100%" controls>
-              <source src="https://www.dropbox.com/scl/fi/23mkrj63wql2xr90t39s3/video7.mp4?rlkey=zotxzk6k1djtjjyeht645iefq&st=k9znz390&raw=1" type="video/mp4">
-            </video>
-          </div>
-        </div>
-                <div class="slider-item">
-          <div class="card img-holder" style="--width: 300; --height: 533;">
-            <video width="100%" height="100%" controls>
-              <source src="https://www.dropbox.com/scl/fi/0hpnkmukamcookzyess6s/video8.mp4?rlkey=s43svbvhh5bubab27twytkm7z&st=x0tv1v6g&raw=1" type="video/mp4">
-            </video>
-          </div>
-        </div>
+        <button class="btn-icon slider-control prev" data-slider-prev><ion-icon name="arrow-back-sharp"></ion-icon></button>
+        <button class="btn-icon slider-control next" data-slider-next><ion-icon name="arrow-forward-sharp"></ion-icon></button>
       </div>
-
-      <button class="btn-icon slider-control prev" data-slider-prev>
-        <ion-icon name="arrow-back-sharp"></ion-icon>
-      </button>
-      <button class="btn-icon slider-control next" data-slider-next>
-        <ion-icon name="arrow-forward-sharp"></ion-icon>
-      </button>
     </div>
-
-
-    <!-- JK Card Slider -->
-    <div class="slider card-slider" data-slider>
-      <div class="slider-container" data-slider-container>
-        <div class="slider-item">
-          <div class="card img-holder" style="--width: 500; --height: 750;">
-            <img src="./images/movie-07.jpg" width="500" height="750" alt="" class="img-cover">
-          </div>
-        </div>
-        <div class="slider-item">
-          <div class="card img-holder" style="--width: 500; --height: 750;">
-            <img src="./images/movie-08.jpg" width="500" height="750" alt="" class="img-cover">
-          </div>
-        </div>
-        <div class="slider-item">
-          <div class="card img-holder" style="--width: 500; --height: 750;">
-            <img src="./images/movie-09.jpg" width="500" height="750" alt="" class="img-cover">
-          </div>
-        </div>
-        <div class="slider-item">
-          <div class="card img-holder" style="--width: 500; --height: 750;">
-            <img src="./images/movie-10.jpg" width="500" height="750" alt="" class="img-cover">
-          </div>
-        </div>
-        <div class="slider-item">
-          <div class="card img-holder" style="--width: 500; --height: 750;">
-            <img src="./images/movie-11.jpg" width="500" height="750" alt="" class="img-cover">
-          </div>
-        </div>
-        <div class="slider-item">
-          <div class="card img-holder" style="--width: 500; --height: 750;">
-            <img src="./images/movie-12.jpg" width="500" height="750" alt="" class="img-cover">
-          </div>
-        </div>
-        <div class="slider-item">
-          <div class="card img-holder" style="--width: 500; --height: 750;">
-            <img src="./images/movie-13.jpg" width="500" height="750" alt="" class="img-cover">
-          </div>
-        </div>
-        <div class="slider-item">
-          <div class="card img-holder" style="--width: 500; --height: 750;">
-            <img src="./images/movie-14.jpg" width="500" height="750" alt="" class="img-cover">
-          </div>
-        </div>
-        <div class="slider-item">
-          <div class="card img-holder" style="--width: 500; --height: 750;">
-            <img src="./images/movie-15.jpg" width="500" height="750" alt="" class="img-cover">
-          </div>
-        </div>
-        <div class="slider-item">
-          <div class="card img-holder" style="--width: 500; --height: 750;">
-            <img src="./images/movie-16.jpg" width="500" height="750" alt="" class="img-cover">
-          </div>
-        </div>
-      </div>
-
-      <button class="btn-icon slider-control prev" data-slider-prev>
-        <ion-icon name="arrow-back-sharp"></ion-icon>
-      </button>
-      <button class="btn-icon slider-control next" data-slider-next>
-        <ion-icon name="arrow-forward-sharp"></ion-icon>
-      </button>
-    </div>
-
   </div>
 
-  <!-- Custom JS -->
+  <!-- Scripts -->
   <script src="./script.js"></script>
-  <!-- Ionicon -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
+
 </html>
