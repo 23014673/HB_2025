@@ -162,10 +162,6 @@ body:is(:hover, :focus-visible)::-webkit-scrollbar-thumb {
 
 .slider-control:disabled { display: none; }
 
-
-
-
-
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
@@ -228,7 +224,6 @@ body:is(:hover, :focus-visible)::-webkit-scrollbar-thumb {
   border-radius: var(--radius-12);
 }
 
-/* ---------- Modern Nav Bar ---------- */
 /* ---------- Modern Nav Bar ---------- */
 .navbar {
   position: fixed;

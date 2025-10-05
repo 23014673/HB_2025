@@ -98,7 +98,7 @@ for (let i = 0, len = sliders.length; i < len; i++) {
 
   // Scale the body and all sliders by 1.3 (30% bigger)
   document.addEventListener("DOMContentLoaded", () => {
-    const scaleFactor = 1.5;
+    const scaleFactor = 1.2;
 
     // Scale the container
     const container = document.querySelector('.container');
