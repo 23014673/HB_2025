@@ -95,19 +95,3 @@ document.querySelector(".tab-content").classList.add("active");
 for (let i = 0, len = sliders.length; i < len; i++) {
   sliderInit(sliders[i]);
 }
-
-  // Scale the body and all sliders by 1.3 (30% bigger)
-  document.addEventListener("DOMContentLoaded", () => {
-    const scaleFactor = 1.2;
-
-    // Scale the container
-    const container = document.querySelector('.container');
-    if (container) {
-      container.style.transform = `scale(${scaleFactor})`;
-      container.style.transformOrigin = 'top center'; // keeps it centered at top
-    }
-
-    // Optionally, scale the body as well if needed
-    // document.body.style.transform = `scale(${scaleFactor})`;
-    // document.body.style.transformOrigin = 'top center';
-  });
