@@ -41,7 +41,7 @@ HB_2025/
 ├── .gitignore        # Ignore system and temporary files  
 └── README.md         # Project overview  
 ├── style-guide.md # Style guidelines
-
+   ├── .vscode/ # Editor settings
 ---
 
 ## 👩‍💻 Author
