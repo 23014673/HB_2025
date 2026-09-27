@@ -40,6 +40,7 @@ HB_2025/
 ├── script.js         # JavaScript slider logic  
 ├── .gitignore        # Ignore system and temporary files  
 └── README.md         # Project overview  
+├── style-guide.md # Style guidelines
 
 ---
 
